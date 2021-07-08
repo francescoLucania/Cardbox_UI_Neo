@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { ColorsComponent } from './modules/colors/colors.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TypographyComponent } from './modules/typography/typography.component';
+import {NgxPageScrollModule} from "ngx-page-scroll";
+import { BreakpointsComponent } from './modules/breakpoints/breakpoints.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorsComponent,
     HeaderComponent,
-    TypographyComponent
+    TypographyComponent,
+    BreakpointsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

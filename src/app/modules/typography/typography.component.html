@@ -2,19 +2,27 @@
   <div class="container">
     <h1 class="section__title">
       Типографика
+      <ul class="section__title-navigate">
+        <li><a pageScroll href="#about">Содержание</a></li>
+        <li><a pageScroll href="#examples">Примеры</a></li>
+      </ul>
     </h1>
     <div class="section__description">
       <p>
-        Заголовки и текст выполняются в гарнитуре  Lato  в жирном начертании.<br>
+        Заголовки(в жирном начертании) и текст(в обычном начертании) выполняются в гарнитуре  Lato.<br>
         Первое значение(32/40) это размер шрифта в рх. Второе(32/40) значение через слеш это значение line-height.<br>
         Заголовки одного размера на всех брекпоинтах (Если дизайн макетом не задано иное)
       </p>
       <p>
+        Если дизайн макетом заданы кастомные свойства, делаем в файле стилей нужный класс, добавляем через @include(@include heading-h3()) нужный миксин, ниже пишем кастомные свойства
       </p>
-      Если дизайн макетом заданы кастомные свойства, делаем в файле стилей нужный класс, добавляем через @include(@include heading-h3()) нужный миксин, ниже пишем кастомные свойства
+      <p>
+        Так же есть атомарные классы, но их использование не дает таакой гибкости, как создание элемента на основе миксина
+      </p>
     </div>
 
-    <div class="section__content">
+    <div id="about" class="section__content">
+      <h2 class="section__subtitle">Содержание:</h2>
       <div class="typography">
         <ul class="typography__list">
           <li class="typography__list-item" *ngFor="let item of data">
@@ -43,6 +51,50 @@
           </li>
         </ul>
       </div>
+    </div>
+
+    <div id="examples" class="section__content">
+      <h2 class="section__subtitle">Примеры:</h2>
+
+      <article class="section__content-examples">
+        <header>
+          <h3 class="section__content-examples-title">Простая вставка миксина в кастомный селектор:</h3>
+        </header>
+        <img src="../../../assets/img/typgraphy/ex-1.png" alt="">
+        <footer>
+          <div class="section__content-examples-result">
+            Результат:
+          </div>
+          <div class="page-title">Вариант 1</div>
+        </footer>
+      </article>
+
+      <article class="section__content-examples">
+        <header>
+          <h3 class="section__content-examples-title">Вставка с изменением размера для дисплеев меньше 768px(для тестирования можно поресайзить):</h3>
+        </header>
+        <img src="../../../assets/img/typgraphy/ex-2.png" alt="">
+        <footer>
+          <div class="section__content-examples-result">
+            Результат:
+          </div>
+          <div class="page-title-2 ">Вариант 2</div>
+        </footer>
+      </article>
+
+      <article class="section__content-examples">
+        <header>
+          <h3 class="section__content-examples-title">Вставка с изменением font-weight:</h3>
+        </header>
+        <img src="../../../assets/img/typgraphy/ex-3.png" alt="">
+        <footer>
+          <div class="section__content-examples-result">
+            Результат:
+          </div>
+          <div class="page-title-3 ">Вариант 2</div>
+        </footer>
+      </article>
+
     </div>
   </div>
 </section>
