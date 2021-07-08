@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "node_modules/normalize.css/normalize";
+@import "assets/styles/theme-provider/theme-provider";
+@import "assets/styles/theme-provider/global_styles/global_styles";
+@import "assets/styles/components/container/container";
+@import "assets/styles/components/sections/sections";

@@ -1,0 +1,49 @@
+@import "./src/assets/styles/theme-provider/theme-provider";
+
+.typography {
+  &__list {
+
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list-item-body {
+    display: flex;
+  }
+
+  &__list-item-body-col-size {
+    margin-right: 48px;
+    width: 128px;
+
+    @include mq(sm) {
+      width: 64px;
+    }
+  }
+
+  &__list-item-body-col-description {
+    flex-grow: 1;
+  }
+
+  &__description-body {
+    margin-top: 16px;
+  }
+
+  &__description-body-item {
+    dl {
+      display: flex;
+    }
+
+    dl dt {
+      width: 80px;
+      color: $color-base-light;
+    }
+
+    dl dd {
+      font-weight: 700;
+    }
+  }
+}

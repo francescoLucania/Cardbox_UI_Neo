@@ -1,0 +1,13 @@
+@import "./src/assets/styles/theme-provider/theme-provider";
+
+.site-header {
+  padding: 24px 0;
+  background: $color-base;
+
+  &__title {
+    @include heading-h2();
+
+    margin: 0 auto;
+    color: #fff;
+  }
+}

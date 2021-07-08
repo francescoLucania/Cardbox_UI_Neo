@@ -1,0 +1,136 @@
+
+@mixin font($font-size, $line-height: $font-size) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Typography from CardboxUI(https://www.figma.com/file/yxBwzEgsC11kdO3XwqjSuz/Cardbox-UI?node-id=3459%3A1092)
+
+@mixin text {
+  font-family: $font-family-text;
+
+  a,
+  button {
+    font-weight: inherit;
+    text-decoration: none;
+  }
+}
+
+@mixin h {
+  font-family: $font-family-title;
+
+  a,
+  button {
+    font-weight: inherit;
+    text-decoration: none;
+  }
+}
+
+// Text
+@mixin text-base($font-weight: 400) {
+  @include font(16px, 24px);
+
+  font-weight: $font-weight;
+}
+
+@mixin text-small($font-weight: 400) {
+  @include font(14px, 20px);
+
+  font-weight: $font-weight;
+}
+
+// Headings
+// Размеры заголовков во всех брекпоинтах одинаковы (Если дизайн макетом не задано иное)
+// Если дизайн макетом задано изменение размера или каких либо других свойств, делаем это в компоненте:
+// @include header-h1(); - далее кастомные стили
+
+@mixin heading-h1($font-weight: 700) {
+  @include h;
+  @include font(36px, 40px);
+
+  font-weight: $font-weight;
+
+}
+
+@mixin heading-h2($font-weight: 700) {
+  @include h;
+  @include font(32px, 40px);
+
+  font-weight: $font-weight;
+}
+
+@mixin heading-h3($font-weight: 700) {
+  @include h;
+  @include font(24px, 32px);
+
+  font-weight: $font-weight;
+}
+
+@mixin heading-h4($font-weight: 700) {
+  @include h;
+  @include font(20px, 28px);
+
+  font-weight: $font-weight;
+}
+
+@mixin heading-h5($font-weight: 700) {
+  @include h;
+  @include font(18px, 24px);
+
+  font-family: $font-family-text;
+  font-weight: $font-weight;
+}
+
+@mixin heading-h6($font-weight: 700) {
+  @include h;
+  @include font(16px, 24px);
+
+  font-weight: $font-weight;
+}
+
+// Atomic classes
+
+.text-base {
+  @include text-base;
+}
+
+.text-small {
+  @include text-small;
+}
+
+.heading-h1 {
+  @include heading-h1;
+}
+
+.heading-h1 {
+  @include heading-h1;
+}
+
+.heading-h2 {
+  @include heading-h2;
+}
+
+.heading-h3 {
+  @include heading-h3;
+}
+
+.heading-h4 {
+  @include heading-h4;
+}
+
+.heading-h5 {
+  @include heading-h5;
+}
+
+.heading-h6 {
+  @include heading-h6;
+}
+
+
+small {
+  @include text-small;
+}
+
+b, strong {
+  @include text-base(700)
+}

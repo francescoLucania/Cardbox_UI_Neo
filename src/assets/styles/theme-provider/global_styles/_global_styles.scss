@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  &.mod_flexboxtweener {
+    // 1
+    height: 100%;
+  }
+}
+
+body {
+  @include text-base;
+
+  background: $color-background;
+  font-family: $font-family-text;
+  color: $color-base;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-flow: 1;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background: $color-brand;
+}
+
+iframe {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+
+  &[width],
+  &[height] {
+    max-width: none;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+svg {
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+a,
+button,
+input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}

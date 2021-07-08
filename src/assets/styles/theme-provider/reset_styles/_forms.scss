@@ -1,0 +1,26 @@
+button,
+input,
+select,
+textarea {
+  @include text-base;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+

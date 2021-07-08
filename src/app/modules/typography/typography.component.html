@@ -1,0 +1,48 @@
+<section class="section">
+  <div class="container">
+    <h1 class="section__title">
+      Типографика
+    </h1>
+    <div class="section__description">
+      <p>
+        Заголовки и текст выполняются в гарнитуре  Lato  в жирном начертании.<br>
+        Первое значение(32/40) это размер шрифта в рх. Второе(32/40) значение через слеш это значение line-height.<br>
+        Заголовки одного размера на всех брекпоинтах (Если дизайн макетом не задано иное)
+      </p>
+      <p>
+      </p>
+      Если дизайн макетом заданы кастомные свойства, делаем в файле стилей нужный класс, добавляем через @include(@include heading-h3()) нужный миксин, ниже пишем кастомные свойства
+    </div>
+
+    <div class="section__content">
+      <div class="typography">
+        <ul class="typography__list">
+          <li class="typography__list-item" *ngFor="let item of data">
+            <div class="typography__list-item-body">
+              <div class="typography__list-item-body-col-size">
+                <div class="heading-h3">{{item.size}}</div>
+              </div>
+              <div class="typography__list-item-body-col-description">
+                <div [ngClass]="item.class">{{item.title}}</div>
+                <ul class="typography__description-body">
+                  <li class="typography__description-body-item">
+                    <dl>
+                      <dt>Миксин:</dt>
+                      <dd>{{item.mixin}}</dd>
+                    </dl>
+                  </li>
+                  <li class="typography__description-body-item">
+                    <dl>
+                      <dt>Класс:</dt>
+                      <dd>.{{item.class}}</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
