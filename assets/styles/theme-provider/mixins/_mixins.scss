@@ -1,0 +1,113 @@
+
+// Media queries
+@mixin mq($mq-breakpoint) {
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-device: '';
+
+    $mq-range: 'min';
+    @if $mq-breakpoint == nth(map-keys($mq-breakpoints), 1) {
+      $mq-range: 'max';
+    }
+
+    @media all and (#{$mq-range}#{$mq-device}-width:map-get($mq-breakpoints, $mq-breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin mq-custom($mq-range, $mq-breakpoint) {
+  $mq-device: '';
+
+  @media all and (#{$mq-range}#{$mq-device}-width:$mq-breakpoint) {
+    @content;
+  }
+}
+
+// Container
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+
+  @each $mq-container-width in $mq-container-widths {
+    $mq: nth($mq-container-width, 1);
+    $container-width: nth($mq-container-width, 2);
+
+    @include mq($mq) {
+      max-width: $container-width;
+    }
+  }
+
+  @each $mq-container-indent in $mq-container-indents {
+    $mq: nth($mq-container-indent, 1);
+    $container-indent: nth($mq-container-indent, 2);
+
+    @include mq($mq) {
+      padding-right: $container-indent;
+      padding-left: $container-indent;
+    }
+  }
+}
+
+// Grid
+@mixin grid(
+  $main-axis: x,
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $multiplier: 1
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+
+  @if $main-axis == x {
+    flex-flow: row wrap;
+  }
+
+  @if $main-axis == y {
+    flex-flow: column nowrap;
+  }
+
+  @each $mq-grid-gutter in $mq-grid-gutters {
+    $mq: nth($mq-grid-gutter, 1);
+    $gutter: -#{nth($mq-grid-gutter, 2) / 2 * $multiplier};
+
+    @include mq($mq) {
+      margin-right: $gutter;
+      margin-left: $gutter;
+    }
+  }
+}
+
+// Grid col
+@mixin grid-col($multiplier: 1) {
+  @each $mq-grid-gutter in $mq-grid-gutters {
+    $mq: nth($mq-grid-gutter, 1);
+    $gutter: nth($mq-grid-gutter, 2) / 2 * $multiplier;
+
+    @include mq($mq) {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
+  }
+}
+
+@mixin grid-col-mx($size, $multiplier: 1) {
+  flex: 0 0 $size * 100%;
+  max-width: $size * 100%;
+
+  @each $mq-grid-gutter in $mq-grid-gutters {
+    $mq: nth($mq-grid-gutter, 1);
+    $gutter: nth($mq-grid-gutter, 2) / 2 * $multiplier;
+
+    @include mq($mq) {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
+  }
+}
+
+// Size
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

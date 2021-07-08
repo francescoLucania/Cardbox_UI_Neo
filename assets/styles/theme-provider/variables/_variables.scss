@@ -1,0 +1,68 @@
+// Responsive (for example: xs, sm, md, lg, xl)
+$mq-breakpoints: (
+  'sm': 767px,
+  'md': 768px,
+  'lg': 1140px,
+);
+
+$mq-indents: (
+  'sm': 24px,
+  'md': 32px,
+  'lg': 32px,
+);
+
+$mq-container-widths: (
+  'sm': 100%,
+  'md': 100%,
+  'lg': 1366px,
+);
+
+$mq-container-indents: (
+  'sm': 16px,
+  'md': 64px,
+  'lg': 75px,
+);
+
+// font
+$font-family-text: Lato, Arial, sans-serif, -apple-system;
+$font-family-title: $font-family-text;
+
+
+// theme colors from CardboxUI(https://www.figma.com/file/yxBwzEgsC11kdO3XwqjSuz/Cardbox-UI?node-id=3459%3A1092)
+
+$color-gosblue: #0D4CD3;
+$color-gosred: #EE3F58;
+$color-tela-rosso: #E11432;
+$color-summer-night: #0B1F33;
+$color-text-helper: #66727F;
+$color-active-item: #1D5DEB;
+$color-button-hit: #0B40B3;
+$color-blu-digitale: #4D83FA;
+$color-blu-selvaggio: #9DACCE;
+$color-background: #FAFCFF;
+$color-input: #F5F7FA;
+$color-bg-disable: #D1D5DF;
+$color-devider: #99B1E6;
+$color-error-highlight: rgba(238, 63, 88, 0.16);
+$color-shadow: #E6EBF5;
+$color-tagline: rgba(29, 93, 235, 0.6);
+$color-tagline-hit: rgba(29, 93, 235, 0.06);
+$color-giallo-brillante: #FED13E;
+$color-giallo-selezionato: #F8B200;
+$color-foglia-di-acero: #FED13E;
+$color-green-sea: #16A086;
+$color-nephritis: #2DC36A;
+$color-pino-verde: #12826E;
+
+// colors
+$color-base: #0B1F33;
+$color-base-light: #66727F;
+$color-brand: #0D4CD3;
+
+// border-radius
+$border-radius-base: 8px;
+
+// Transitions
+$transition-duration-base: 0.2s;
+
+
