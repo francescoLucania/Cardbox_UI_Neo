@@ -69,3 +69,25 @@
 
   color: $color-error-highlight;
 }
+
+.demo-content-1 {
+  h3 {
+    @include heading-h3;
+  }
+
+  p {
+    @include text-base;
+
+    &.line-through {
+      text-decoration: line-through;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  small {
+    @include text-small()
+  }
+}
