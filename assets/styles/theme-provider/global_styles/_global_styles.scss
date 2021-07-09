@@ -101,6 +101,8 @@ input {
 }
 
 a {
+  text-decoration: none;
+
   &:visited {
     color: inherit;
   }
