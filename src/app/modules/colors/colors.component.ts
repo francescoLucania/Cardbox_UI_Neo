@@ -17,7 +17,7 @@ export class ColorsComponent implements OnInit {
     },
     {
       colorTitle: 'Gosred',
-      colorCode: '#0D4CD3',
+      colorCode: '#EE3F58',
       colorValue: '#EE3F58 100%',
       colorVar: '$color-gosred',
       colorDescription: 'Основной красный цвет портала. Используется в иконках, в графке и графических элементах. Не используется для наборных текстов.',
@@ -164,9 +164,14 @@ export class ColorsComponent implements OnInit {
     },
   ]
 
+  public searchCode = '';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  searchColor({target}: Event) {
+    this.searchCode = (target as HTMLInputElement).value
+  }
 }

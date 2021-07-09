@@ -9,6 +9,7 @@ import { TypographyComponent } from './modules/typography/typography.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
 import { BreakpointsComponent } from './modules/breakpoints/breakpoints.component';
 import { HomeComponent } from './modules/home/home.component';
+import { ColorFilterPipe } from './pipes/color-filter/color-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HomeComponent } from './modules/home/home.component';
     TypographyComponent,
     BreakpointsComponent,
     HomeComponent,
+    ColorFilterPipe,
   ],
   imports: [
     BrowserModule,

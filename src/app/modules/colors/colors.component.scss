@@ -1,6 +1,32 @@
 @import "./src/assets/styles/theme-provider/theme-provider";
+@import "./src/assets/styles/theme-provider/reset_styles/forms";
 
 .colors {
+
+  &__search-block {
+    margin-bottom: 32px;
+
+    input {
+      @include heading-h2(400);
+
+      display: block;
+      padding: 16px;
+      width: 100%;
+      border-radius: $border-radius-base / 2;
+      border: 2px solid $color-brand;
+      color: $color-base;
+
+      &::placeholder {
+        color: $color-blu-selvaggio;
+      }
+
+      &:active,
+      &:focus {
+        border-color: $color-active-item;
+      }
+    }
+  }
+
   &__list {
 
   }
