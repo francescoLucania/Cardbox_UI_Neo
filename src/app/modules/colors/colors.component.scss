@@ -1,0 +1,28 @@
+@import "./src/assets/styles/theme-provider/theme-provider";
+
+.colors {
+  &__list {
+
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list-item-body {
+    display: flex;
+  }
+
+  &__list-item-body-col-size {
+    margin-right: 48px;
+    width: 128px;
+
+    @include mq(sm) {
+      width: 64px;
+    }
+  }
+
+
+}

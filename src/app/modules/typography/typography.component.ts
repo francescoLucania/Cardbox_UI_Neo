@@ -21,6 +21,12 @@ export class TypographyComponent implements OnInit {
       class: 'text-small'
     },
     {
+      size: '36/40',
+      title: 'Heading H1',
+      mixin: 'heading-h1($font-weight)',
+      class: 'heading-h1'
+    },
+    {
       size: '32/40',
       title: 'Heading H2',
       mixin: 'heading-h2($font-weight)',
