@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TypographyComponent } from './modules/typography/typography.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
 import { BreakpointsComponent } from './modules/breakpoints/breakpoints.component';
+import { HomeComponent } from './modules/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BreakpointsComponent } from './modules/breakpoints/breakpoints.componen
     HeaderComponent,
     TypographyComponent,
     BreakpointsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

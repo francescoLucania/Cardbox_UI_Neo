@@ -1,0 +1,53 @@
+<section class="section">
+  <div class="container">
+    <h1 class="section__title">
+      breakpoints - упрощенная работа с @media выражениями
+    </h1>
+
+    <div class="section__content">
+      <h2 class="section__subtitle">
+        Миксины
+      </h2>
+      <div class="section__description">
+        Для системной и упрощенной работы с @media в системе есть миксин <b>mq()</b> и  <b>mq-custom()</b>
+      </div>
+      <h3>
+        Миксин mq()
+      </h3>
+      <p>
+        В файле <b>_variables.scss</b> есть <b>$mq-breakpoints</b> - "массив" с данными по брекпоинтам(на основе <a target="_blank" href="https://www.figma.com/file/yxBwzEgsC11kdO3XwqjSuz/Cardbox-UI?node-id=59%3A1047">Cardbox UI</a>), в нем указаны системные брекпоинты портала.
+      </p>
+      <img src="./assets/img/breakpoints/bp-1.png" alt="$mq-breakpoints">
+      <p>
+        <b>mq()</b> работает на основе данных в <b>$mq-breakpoints</b>, первый ключ - <b>sm</b>,   <b>{{'mq(sm) {...}'}}</b> сгенерирует следующий css: <b>{{'@media all and (max-width: 767px) {...}'}}</b>
+      </p>
+      <p>
+        <b>max-width</b> генерируется только по первому ключу массива(в нашем случае это sm)
+      </p>
+      <p>
+        <b>{{'mq(md) {...}'}}</b> сгенерирует следующий css: <b>{{'@media all and (min-width: 768px) {...}'}}</b>
+      </p>
+      <p>
+        <b>{{'mq(lg) {...}'}}</b> сгенерирует следующий css: <b>{{'@media all and (min-width: 1140px) {...}'}}</b>
+      </p>
+      <h3>
+        Миксин mq-custom()
+      </h3>
+      <p>
+        <b>mq-custom()</b> помогает делать кастомные брекпоинты(не отраженные в $mq-breakpoints), у него два атрибута: <b>mq-custom( max/min, 640px )</b>
+      </p>
+      <p>
+        <b>{{'@include mq-custom (max, 640px) {...}'}}</b> сгенерирует следующий css: <b>{{'@media all and (max-width: 640px) {...}'}}</b>
+      </p>
+
+      <p>
+        <b>{{'@include mq-custom (min, 720px) {...}'}}</b> сгенерирует следующий css: <b>{{'@media all and (min-width: 720px) {...}'}}</b>
+      </p>
+      <p>
+        <b>Комбинированное использование mq-custom:</b>
+      </p>
+      <img src="./assets/img/breakpoints/bp-2.png" alt="Комбинированное использование mq-custom">
+    </div>
+
+  </div>
+</section>
