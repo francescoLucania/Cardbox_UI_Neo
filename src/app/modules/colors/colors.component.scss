@@ -12,15 +12,53 @@
   }
 
   &__list-item-body {
-    display: flex;
+    @include mq(md) {
+      display: flex;
+    }
   }
 
-  &__list-item-body-col-size {
+  &__list-item-body-col-code {
     margin-right: 48px;
-    width: 128px;
+    min-width: 320px;
+    width: 320px;
+  }
+
+  &__list-item-body-col-description {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+    border-left: 2px solid;
+    color: $color-base-light;
 
     @include mq(sm) {
-      width: 64px;
+      margin-top: 16px;
+    }
+  }
+
+  &__circle {
+    @include size(64px);
+
+    border-radius: 50%;
+    border: 1px solid $color-base;
+  }
+
+  &__code-body {
+    margin-top: 16px;
+  }
+
+  &__code-body-item {
+    dl {
+      display: flex;
+    }
+
+    dl dt {
+      width: 120px;
+      color: $color-base-light;
+    }
+
+    dl dd {
+      font-weight: 700;
     }
   }
 

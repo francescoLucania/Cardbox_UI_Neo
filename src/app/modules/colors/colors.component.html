@@ -9,7 +9,43 @@
       </p>
     </div>
     <div class="section__content">
+      <div class="colors">
+        <ul class="colors__list">
+          <li class="colors__list-item" *ngFor="let item of data">
+            <div class="colors__list-item-body">
+              <div class="colors__list-item-body-col-code">
+                <div class="colors__circle" [ngStyle]="{backgroundColor: item.colorCode}">
 
+                </div>
+
+                <ul class="colors__code-body">
+                  <li class="colors__code-body-item">
+                    <dl>
+                      <dt>Cardbox UI:</dt>
+                      <dd>{{item.colorTitle}}</dd>
+                    </dl>
+                  </li>
+                  <li class="colors__code-body-item">
+                    <dl>
+                      <dt>Значение:</dt>
+                      <dd>{{item.colorValue}}</dd>
+                    </dl>
+                  </li>
+                  <li class="colors__code-body-item">
+                    <dl>
+                      <dt>Переменная:</dt>
+                      <dd>{{item.colorVar}}</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <div class="colors__list-item-body-col-description">
+                {{item.colorDescription}}
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {TypographyComponent} from "./modules/typography/typography.component";
 import {HomeComponent} from "./modules/home/home.component";
 import {BreakpointsComponent} from "./modules/breakpoints/breakpoints.component";
+import {ColorsComponent} from "./modules/colors/colors.component";
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'typography',
     component: TypographyComponent
+  },
+  {
+    path: 'colors',
+    component: ColorsComponent
   },
   {
     path: '**',
