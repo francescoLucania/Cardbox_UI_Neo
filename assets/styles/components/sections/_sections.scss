@@ -110,7 +110,9 @@
       }
     }
 
-    p {
+    p,
+    ul,
+    img {
       &:not(:first-child) {
         margin-top: 8px;
       }

@@ -23,6 +23,10 @@
     pointer-events: none;
   }
 
+  &.base-button-block {
+    width: 100%;
+  }
+
   &.horizontal-padding-min {
     padding: 10px 20px;
   }
