@@ -107,6 +107,11 @@ a {
     color: inherit;
   }
 
+  &:active,
+  &:focus {
+    color: inherit;
+  }
+
   &:not([class]) {
     color: $color-brand;
 

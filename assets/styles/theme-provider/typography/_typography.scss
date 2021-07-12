@@ -23,6 +23,12 @@
   button {
     font-weight: inherit;
     text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 
