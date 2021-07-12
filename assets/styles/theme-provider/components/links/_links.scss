@@ -20,7 +20,6 @@ a {
     &:hover,
     &:focus {
       color: $color-active-item;
-      text-decoration: underline;
     }
 
     &.is-active,
