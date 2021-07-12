@@ -100,37 +100,6 @@ input {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
-a {
-  text-decoration: none;
-
-  &:visited {
-    color: inherit;
-  }
-
-  &:active,
-  &:focus {
-    color: inherit;
-  }
-
-  &:not([class]) {
-    color: $color-brand;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-
-    &:hover {
-      color: $color-active-item;
-    }
-
-    &:active,
-    &:focus {
-      color: $color-button-hit;
-    }
-  }
-}
-
 /* Chrome, Safari, Edge, Opera */
 
 input::-webkit-outer-spin-button,

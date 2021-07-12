@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &.is-hover,
+  &.is-focus,
+  &:active,
+  &:focus {
+    color: inherit;
+  }
+
+  &:not([class]) {
+    color: $color-brand;
+
+    &.is-hover,
+    &.is-focus,
+    &:hover,
+    &:focus {
+      color: $color-active-item;
+      text-decoration: underline;
+    }
+
+    &.is-active,
+    &:active, {
+      color: $color-button-hit;
+    }
+  }
+}

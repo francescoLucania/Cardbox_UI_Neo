@@ -3,6 +3,10 @@
 
   &__title,
   &__subtitle {
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 32px;
     }
