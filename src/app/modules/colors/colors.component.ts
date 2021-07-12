@@ -8,6 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ColorsComponent implements OnInit {
 
   public data = [
+
+    {
+      colorTitle: 'Gosblue',
+      colorCode: '#0D4CD3',
+      colorValue: '#0D4CD3 100%',
+      colorVar: '$color-gosblue',
+      colorVarPopular: '$color-brand',
+      colorDescription: 'Основной синий цвет портала. Используется в иконках, интерективных элементах, цвет ссылки, цвет фона, и обводки основной и второстепенной кнопки.',
+    },
+
     {
       colorTitle: 'Gosblue',
       colorCode: '#0D4CD3',
@@ -34,6 +44,7 @@ export class ColorsComponent implements OnInit {
       colorCode: '#0B1F33',
       colorValue: '#0B1F33 100%',
       colorVar: '$color-summer-night',
+      colorVarPopular: '$color-base',
       colorDescription: 'Основной темный цвет портала. Заменяет собой черный цвет. Чистый черный цвет не используется.',
     },
     {
@@ -41,6 +52,7 @@ export class ColorsComponent implements OnInit {
       colorCode: '#66727F',
       colorValue: '#66727F 100%',
       colorVar: '$color-text-helper',
+      colorVarPopular: '$color-base-light',
       colorDescription: 'Второстепенный темный цвет портала. Используется как в шрифтах так и графике.',
     },
     {
