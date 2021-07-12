@@ -12,6 +12,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { ColorFilterPipe } from './pipes/color-filter/color-filter.pipe';
 import { ButtonsComponent } from './modules/buttons/buttons.component';
 import { ConnectComponent } from './modules/connect/connect.component';
+import { CodestyleComponent } from './modules/codestyle/codestyle.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ConnectComponent } from './modules/connect/connect.component';
     ColorFilterPipe,
     ButtonsComponent,
     ConnectComponent,
+    CodestyleComponent,
   ],
   imports: [
     BrowserModule,

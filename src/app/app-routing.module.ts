@@ -6,6 +6,7 @@ import {BreakpointsComponent} from "./modules/breakpoints/breakpoints.component"
 import {ColorsComponent} from "./modules/colors/colors.component";
 import {ButtonsComponent} from "./modules/buttons/buttons.component";
 import {ConnectComponent} from "./modules/connect/connect.component";
+import {CodestyleComponent} from "./modules/codestyle/codestyle.component";
 
 const routes: Routes = [
 
@@ -32,6 +33,9 @@ const routes: Routes = [
   {
     path: 'buttons',
     component: ButtonsComponent
+  },  {
+    path: 'codestyle',
+    component: CodestyleComponent
   },
   {
     path: '**',
