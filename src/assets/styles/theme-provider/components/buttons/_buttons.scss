@@ -1,0 +1,107 @@
+
+@mixin base-button-styles($h-p-type: min) {
+  $horizontal-paddings: 20px; // border 2px
+
+  @if $h-p-type == max {
+    $horizontal-paddings: 36px; // border 2px
+  }
+
+  @include text-base;
+
+  padding: 10px $horizontal-paddings;
+  border-radius: $border-radius-base;
+  border: 2px solid;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all $transition-duration-base;
+
+
+
+  &.is-disabled,
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &.base-button-block {
+    width: 100%;
+  }
+
+  &.horizontal-padding-min {
+    padding: 10px 20px;
+  }
+
+  &.horizontal-padding-big {
+    padding: 10px 36px;
+  }
+}
+
+
+
+@mixin cardboxui-base-button($horizontal-paddings-type: min) {
+  @include base-button-styles($horizontal-paddings-type);
+
+  border-color: $color-brand;
+  background-color: $color-brand;
+  color: #fff;
+
+  &.is-hover,
+  &.is-focus,
+  &:hover,
+  &:focus {
+    border-color: $color-active-item;
+    background-color: $color-active-item;
+  }
+
+  &.is-active,
+  &:active {
+    border-color: $color-button-hit;
+    background-color: $color-button-hit;
+  }
+
+  &.is-disabled,
+  &:disabled {
+    border-color: $color-pervinca;
+    background-color: $color-pervinca;
+    color: $color-base-light;
+  }
+}
+
+@mixin cardboxui-base-button-secondary($horizontal-paddings-type: min) {
+  @include base-button-styles($horizontal-paddings-type);
+
+  border-color: $color-brand;
+  background-color: #fff;
+  color: $color-brand;
+
+  &.is-hover,
+  &.is-focus,
+  &:hover,
+  &:focus  {
+    background: $color-input;
+    border-color: $color-active-item;
+    color: $color-active-item;
+  }
+
+  &.is-active,
+  &:active {
+    background: $color-input;
+    border-color: $color-button-hit;
+    color: $color-button-hit;
+  }
+
+  &.is-disabled,
+  &:disabled {
+    border-color: $color-pervinca;
+    background-color: $color-pervinca;
+    color: $color-base-light;
+  }
+}
+
+.cardboxui-base-button {
+  @include cardboxui-base-button;
+}
+
+.cardboxui-base-button-secondary {
+  @include cardboxui-base-button-secondary;
+}

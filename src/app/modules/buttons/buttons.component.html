@@ -1,0 +1,88 @@
+<section class="section">
+  <div class="container">
+    <h1 class="section__title">
+      Кнопки
+      <ul class="section__title-navigate">
+        <li><a pageScroll href="#about">Содержание</a></li>
+        <li><a pageScroll href="#examples">Пример кастомизации</a></li>
+      </ul>
+    </h1>
+    <div class="section__description">
+      <p>
+        Кнопки – это главный элемент взаимодействия с пользователем. Для портала Госуслуги используется 2 вида кнопок: основные(base-button) и второстепенные(base-button-secondary)
+      </p>
+    </div>
+
+    <div id="about" class="section__content">
+      <h2 class="section__subtitle">Общие положения для кнопок:</h2>
+      <div class="section__description">
+        <p>Для кнопки в которой  используется лишь одно или 2 небольши слова, определен отступ от краев нопки 40рх.</p>
+        <p>Для кнопки кнопки в которой  ипользуется длинное слово или несколько слов, отступ изменяется на 24рх.</p>
+        <p>Кнопки  могут располагатся на одном уровне. Второстепенная и основная. Не допускается использовать больше 2 кнопок. Не допускается использование 3 и более кнопок.</p>
+      </div>
+    </div>
+
+    <div class="section__content">
+
+      <h2 class="section__subtitle">Базовая кнопка (mixin: cardboxui-base-button или класс .cardboxui-base-button)</h2>
+      <div class="buttons">
+        <ul class="buttons__list">
+          <li class="buttons__list-item" *ngFor="let button of dataBase">
+            <div class="buttons__list-item-body">
+              <div class="buttons__list-item-body-col-button">
+                <button class="cardboxui-base-button" [ngClass]="button.class">{{button.title}}</button>
+              </div>
+              <div class="buttons__list-item-body-col-description" [innerHTML]="button.description">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="section__content">
+
+      <h2 class="section__subtitle">Второстепенная кнопка (mixin: cardboxui-base-button-secondary или класс .cardboxui-base-button-secondary)</h2>
+      <div class="buttons">
+        <ul class="buttons__list">
+          <li class="buttons__list-item" *ngFor="let button of dataSecondary">
+            <div class="buttons__list-item-body">
+              <div class="buttons__list-item-body-col-button">
+                <button class="cardboxui-base-button-secondary" [ngClass]="button.class">{{button.title}}</button>
+              </div>
+              <div class="buttons__list-item-body-col-description" [innerHTML]="button.description">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="examples" class="section__content">
+      <h2 class="section__subtitle">Примеры:</h2>
+
+      <article class="section__content-examples">
+        <header>
+          <h3 class="section__content-examples-title">Разработка кнопки на основе миксина с добавлением иконки:</h3>
+        </header>
+        <img src="./assets/img/buttons/button-ex-1.png" alt="Разработка кнопки на основе миксина с добавлением иконки">
+        <footer>
+          <div class="section__content-examples-result">
+            Результат:
+          </div>
+          <button class="my-custom-search-button">
+            <svg class="icon" role="img">
+              <use
+                xlink:href="./assets/img/icons.svg#input-search"
+              ></use>
+            </svg>
+            <span>Поиск по порталу</span>
+          </button>
+        </footer>
+      </article>
+
+    </div>
+  </div>
+</section>

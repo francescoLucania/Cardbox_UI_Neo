@@ -1,0 +1,20 @@
+
+.section-list {
+  > li {
+    @include text-base;
+
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      @include size(8px);
+
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      border-radius: 50%;
+      background: $color-brand;
+    }
+  }
+}

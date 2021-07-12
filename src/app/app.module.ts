@@ -10,6 +10,8 @@ import {NgxPageScrollModule} from "ngx-page-scroll";
 import { BreakpointsComponent } from './modules/breakpoints/breakpoints.component';
 import { HomeComponent } from './modules/home/home.component';
 import { ColorFilterPipe } from './pipes/color-filter/color-filter.pipe';
+import { ButtonsComponent } from './modules/buttons/buttons.component';
+import { ConnectComponent } from './modules/connect/connect.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ColorFilterPipe } from './pipes/color-filter/color-filter.pipe';
     BreakpointsComponent,
     HomeComponent,
     ColorFilterPipe,
+    ButtonsComponent,
+    ConnectComponent,
   ],
   imports: [
     BrowserModule,

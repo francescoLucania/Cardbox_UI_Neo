@@ -50,15 +50,18 @@
   }
 
   &__list-item-body-col-description {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
     padding-left: 22px;
     border-left: 2px solid;
     color: $color-base-light;
 
     @include mq(sm) {
       margin-top: 16px;
+    }
+
+    @include mq(md) {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -87,6 +90,4 @@
       font-weight: 700;
     }
   }
-
-
 }

@@ -1,0 +1,33 @@
+<section class="section">
+  <div class="container">
+    <h1 class="section__title">
+      Подключение и использования theme_provider - scss-конфигурация для системного написания стилей проекта
+    </h1>
+    <div class="section__content">
+      <h2>Содержание theme_provider</h2>
+      <p><b>в epgu-lib/src/assets/styles</b> theme-provider добавлена папка theme-provider - scss конфигурация из переменных и миксинов:</p>
+      <img src="./assets/img/connect/connect-1.png" alt="theme_provider">
+      <ul class="section-list">
+        <li><b>variables:</b> переменные(цвета, отступы, брекпоинты) по Сardbox UI</li>
+        <li><b>mixins:</b> миксины конфигурации, упрощают работу с брекпоинтами, позволяют автоматизиривать некоторые аспекты работы с версткой</li>
+        <li><b>global-styles:</b> небольшой "начальный" набор стилей документа, <b>подключается по желанию, в _theme-provider.scss поумолчанию не импортирован</b></li>
+        <li><b>reset_styles:</b> сброс браузерных стилей, кнопки, формы, <b>подключается по желанию, в _theme-provider.scss по умолчанию не импортирован</b></li>
+        <li><b>helpers:</b> немного атомарных классов для работы с брекпоинтами и текстом</li>
+        <li><b>components: links, buttons, typography: </b> миксины и атомарные классы по ключевым элементам дизайн системы</li>
+      </ul>
+      <h2>Подключение theme_provider</h2>
+
+      <p>
+        <b>theme_provider не работает глобально и не сломает ранее написанного кода,</b>
+        для использования инструмента нужно импортировать его в нужный файл стилей:
+      </p>
+      <img src="./assets/img/connect/connect-3.png" alt="theme_provider">
+
+      <p>
+        в epgu-app подключаем так же, импортируем из node_modules/@epgu/epgu-lib/
+      </p>
+      <img src="./assets/img/connect/connect-4.png" alt="theme_provider">
+
+    </div>
+  </div>
+</section>

@@ -77,10 +77,10 @@ export class ColorsComponent implements OnInit {
       colorDescription: 'Цвет Placeholder',
     },
     {
-      colorTitle: 'Button Disabled',
+      colorTitle: 'Pervinca',
       colorCode: '#E5EAF5',
       colorValue: '#E5EAF5 100%',
-      colorVar: '$color-button-disabled',
+      colorVar: '$color-pervinca',
       colorDescription: 'Цвет фона заблокированных элементов.',
     },
     {
@@ -134,8 +134,8 @@ export class ColorsComponent implements OnInit {
     },
     {
       colorTitle: 'Tagline Hit',
-      colorCode: 'rgba(29, 93, 235, 0.6)',
-      colorValue: '#1D5DEB 6%',
+      colorCode: 'rgba(29, 93, 235, 0.16)',
+      colorValue: '#1D5DEB 16%',
       colorVar: '$color-tagline',
       colorDescription: 'Цвет стандартных тегов.',
     },
