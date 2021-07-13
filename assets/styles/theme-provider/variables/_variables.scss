@@ -23,6 +23,12 @@ $mq-container-indents: (
   'lg': 75px,
 );
 
+$mq-grid-gutters: (
+  'sm': map-get($mq-indents, 'sm'),
+  'md': map-get($mq-indents, 'md'),
+  'lg': map-get($mq-indents, 'lg'),
+);
+
 // font
 $font-family-text: Lato, Arial, sans-serif, -apple-system;
 $font-family-title: $font-family-text;
