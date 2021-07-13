@@ -7,6 +7,7 @@ import {ColorsComponent} from "./modules/colors/colors.component";
 import {ButtonsComponent} from "./modules/buttons/buttons.component";
 import {ConnectComponent} from "./modules/connect/connect.component";
 import {CodestyleComponent} from "./modules/codestyle/codestyle.component";
+import {ServiceMixinsComponent} from "./modules/service-mixins/service-mixins.component";
 
 const routes: Routes = [
 
@@ -33,9 +34,14 @@ const routes: Routes = [
   {
     path: 'buttons',
     component: ButtonsComponent
-  },  {
+  },
+  {
     path: 'codestyle',
     component: CodestyleComponent
+  },
+  {
+    path: 'service-mixins',
+    component: ServiceMixinsComponent
   },
   {
     path: '**',

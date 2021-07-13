@@ -79,18 +79,6 @@
 }
 
 // Grid col
-@mixin grid-col($multiplier: 1) {
-  @each $mq-grid-gutter in $mq-grid-gutters {
-    $mq: nth($mq-grid-gutter, 1);
-    $gutter: nth($mq-grid-gutter, 2) / 2 * $multiplier;
-
-    @include mq($mq) {
-      padding-right: $gutter;
-      padding-left: $gutter;
-    }
-  }
-}
-
 @mixin grid-col-mx($size, $multiplier: 1) {
   flex: 0 0 $size * 100%;
   max-width: $size * 100%;

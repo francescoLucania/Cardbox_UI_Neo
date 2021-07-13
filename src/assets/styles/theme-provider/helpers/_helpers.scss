@@ -1,5 +1,5 @@
 
-// mq
+// Атомарные классы по брекпоинтам
 .is-sm {
   display: none !important;
 
@@ -42,7 +42,7 @@
   }
 }
 
-// font/text
+// Атомарные классы для работы с текстом
 .text-align-center {
   text-align: center !important;
 }
@@ -53,6 +53,10 @@
 
 .font-weight-normal {
   font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 800 !important;
 }
 
 .white-space-no-wrap {

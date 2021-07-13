@@ -13,6 +13,8 @@ import { ColorFilterPipe } from './pipes/color-filter/color-filter.pipe';
 import { ButtonsComponent } from './modules/buttons/buttons.component';
 import { ConnectComponent } from './modules/connect/connect.component';
 import { CodestyleComponent } from './modules/codestyle/codestyle.component';
+import { HelpersComponent } from './modules/helpers/helpers.component';
+import { ServiceMixinsComponent } from './modules/service-mixins/service-mixins.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { CodestyleComponent } from './modules/codestyle/codestyle.component';
     ButtonsComponent,
     ConnectComponent,
     CodestyleComponent,
+    HelpersComponent,
+    ServiceMixinsComponent,
   ],
   imports: [
     BrowserModule,
