@@ -17,7 +17,7 @@
   }
 
   &__title {
-    @include heading-h1();
+    @include h1();
 
     a {
       &:hover {
@@ -55,7 +55,7 @@
   }
 
   &__subtitle {
-    @include heading-h2()
+    @include h2();
   }
 
   &__description {
@@ -82,7 +82,7 @@
     }
 
     h2 {
-      @include heading-h2;
+      @include h2();;
 
       &:not(:first-child) {
         margin-top: 32px;
@@ -93,10 +93,10 @@
       }
     }
     h3 {
-      @include heading-h3;
+      @include h3;
     }
     h4 {
-      @include heading-h3;
+      @include h3;
     }
   }
 
@@ -142,7 +142,7 @@
 
   &__content-examples-title,
   &__content-examples-result {
-    @include heading-h4;
+    @include h4;
 
     margin-bottom: 24px;
   }
@@ -152,7 +152,7 @@
   }
 
   &__content-examples-result {
-    @include heading-h5;
+    @include h5;
   }
 }
 
