@@ -1,3 +1,5 @@
+
+
 .section {
   padding: 32px 0;
 
@@ -69,35 +71,9 @@
   }
 
   &__content {
+    @include wysiwyg-styles;
+
     padding-top: 64px;
-
-    h3, h4 {
-      &:not(:first-child) {
-        margin-top: 12px;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 12px;
-      }
-    }
-
-    h2 {
-      @include h2();;
-
-      &:not(:first-child) {
-        margin-top: 32px;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
-    }
-    h3 {
-      @include h3;
-    }
-    h4 {
-      @include h3;
-    }
   }
 
   &__content,
