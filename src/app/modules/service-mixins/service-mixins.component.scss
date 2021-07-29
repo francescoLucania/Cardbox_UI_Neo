@@ -28,7 +28,7 @@
   }
 
   &__card-title {
-    @include heading-h5(400);
+    @includeh5(400);
 
     margin-bottom: 8px;
     color: $color-brand;

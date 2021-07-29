@@ -22,39 +22,39 @@ export class TypographyComponent implements OnInit {
     },
     {
       size: '36/40',
-      title: 'Heading H1',
-      mixin: 'heading-h1($font-weight)',
-      class: 'heading-h1'
+      title: 'H1',
+      mixin: 'h1($font-weight)',
+      class: 'h1'
     },
     {
       size: '32/40',
-      title: 'Heading H2',
-      mixin: 'heading-h2($font-weight)',
-      class: 'heading-h2'
+      title: 'H2',
+      mixin: 'h2($font-weight)',
+      class: 'h2'
     },
     {
       size: '24/32',
-      title: 'Heading H3',
-      mixin: 'heading-h3($font-weight)',
-      class: 'heading-h3'
+      title: 'H3',
+      mixin: 'h3($font-weight)',
+      class: 'h3'
     },
     {
       size: '20/28',
-      title: 'Heading H4',
-      mixin: 'heading-h4($font-weight)',
-      class: 'heading-h4'
+      title: 'H4',
+      mixin: 'h4($font-weight)',
+      class: 'h4'
     },
     {
       size: '18/24',
-      title: 'Heading H5',
-      mixin: 'heading-h5($font-weight)',
-      class: 'heading-h5'
+      title: 'H5',
+      mixin: 'h5($font-weight)',
+      class: 'h5'
     },
     {
       size: '16/24',
-      title: 'Heading H6',
-      mixin: 'heading-h6($font-weight)',
-      class: 'heading-h6'
+      title: 'H6',
+      mixin: 'h6($font-weight)',
+      class: 'h6'
     }
   ]
 

@@ -14,7 +14,7 @@
         Заголовки одного размера на всех брекпоинтах (Если дизайн макетом не задано иное)
       </p>
       <p>
-        Если дизайн макетом заданы кастомные свойства, делаем в файле стилей нужный класс, добавляем через @include(@include heading-h3()) нужный миксин, ниже пишем кастомные свойства
+        Если дизайн макетом заданы кастомные свойства, делаем в файле стилей нужный класс, добавляем через @include(@include h3()) нужный миксин, ниже пишем кастомные свойства
       </p>
       <p>
         Так же есть атомарные классы, но их использование не дает таакой гибкости, как создание элемента на основе миксина
@@ -28,7 +28,7 @@
           <li class="typography__list-item" *ngFor="let item of data">
             <div class="typography__list-item-body">
               <div class="typography__list-item-body-col-size">
-                <div class="heading-h3">{{item.size}}</div>
+                <div class="h3">{{item.size}}</div>
               </div>
               <div class="typography__list-item-body-col-description">
                 <div [ngClass]="item.class">{{item.title}}</div>
@@ -60,7 +60,7 @@
         <header>
           <h3 class="section__content-examples-title">Простая вставка миксина в кастомный селектор:</h3>
         </header>
-        <img src="./assets/img/typgraphy/ex-1.png" alt="">
+        <img src="./assets/img/typgraphy/t-ex-1.png" alt="">
         <footer>
           <div class="section__content-examples-result">
             Результат:
@@ -73,7 +73,7 @@
         <header>
           <h3 class="section__content-examples-title">Вставка с изменением размера для дисплеев меньше 768px(для тестирования можно поресайзить):</h3>
         </header>
-        <img src="./assets/img/typgraphy/ex-2.png" alt="">
+        <img src="./assets/img/typgraphy/t-ex-2.png" alt="">
         <footer>
           <div class="section__content-examples-result">
             Результат:
@@ -86,7 +86,7 @@
         <header>
           <h3 class="section__content-examples-title">Вставка с изменением font-weight:</h3>
         </header>
-        <img src="./assets/img/typgraphy/ex-3.png" alt="">
+        <img src="./assets/img/typgraphy/t-ex-3.png" alt="">
         <footer>
           <div class="section__content-examples-result">
             Результат:
@@ -96,7 +96,7 @@
       </article>
 
       <article class="section__content-examples">
-        <img src="./assets/img/typgraphy/ex-5.png" alt="">
+        <img src="./assets/img/typgraphy/t-ex-4.png" alt="">
         <div class="section__content-examples-result">
           Результат:
         </div>

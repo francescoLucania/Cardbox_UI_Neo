@@ -48,9 +48,9 @@
 // Headings
 // Размеры заголовков во всех брекпоинтах одинаковы (Если дизайн макетом не задано иное)
 // Если дизайн макетом задано изменение размера или каких либо других свойств, делаем это в компоненте:
-// @include header-h1(); - далее кастомные стили
+// @include h1(); - далее кастомные стили
 
-@mixin heading-h1($font-weight: 700) {
+@mixin h1($font-weight: 700) {
   @include h;
   @include font(36px, 40px);
 
@@ -58,28 +58,28 @@
 
 }
 
-@mixin heading-h2($font-weight: 700) {
+@mixin h2($font-weight: 700) {
   @include h;
   @include font(32px, 40px);
 
   font-weight: $font-weight;
 }
 
-@mixin heading-h3($font-weight: 700) {
+@mixin h3($font-weight: 700) {
   @include h;
   @include font(24px, 32px);
 
   font-weight: $font-weight;
 }
 
-@mixin heading-h4($font-weight: 700) {
+@mixin h4($font-weight: 700) {
   @include h;
   @include font(20px, 28px);
 
   font-weight: $font-weight;
 }
 
-@mixin heading-h5($font-weight: 700) {
+@mixin h5($font-weight: 700) {
   @include h;
   @include font(18px, 24px);
 
@@ -87,7 +87,7 @@
   font-weight: $font-weight;
 }
 
-@mixin heading-h6($font-weight: 700) {
+@mixin h6($font-weight: 700) {
   @include h;
   @include font(16px, 24px);
 
@@ -104,32 +104,28 @@
   @include text-small;
 }
 
-.heading-h1 {
-  @include heading-h1;
+.h1 {
+  @include h1;
 }
 
-.heading-h1 {
-  @include heading-h1;
+.h2 {
+  @include h2;
 }
 
-.heading-h2 {
-  @include heading-h2;
+.h3 {
+  @include h3;
 }
 
-.heading-h3 {
-  @include heading-h3;
+.h4 {
+  @include h4;
 }
 
-.heading-h4 {
-  @include heading-h4;
+.h5 {
+  @include h5;
 }
 
-.heading-h5 {
-  @include heading-h5;
-}
-
-.heading-h6 {
-  @include heading-h6;
+.h6 {
+  @include h6;
 }
 
 

@@ -1,0 +1,97 @@
+// _wysiwyg.scss -- text content styles
+@mixin wysiwyg-styles {
+  @include text-base;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  b,
+  strong {
+    color: $color-base;
+  }
+
+  h1 {
+    @include h1();
+  }
+
+  h2 {
+    @include h2();
+  }
+
+  h3 {
+    @include h3();
+  }
+
+  h4 {
+    @include h4();
+  }
+
+  h5 {
+    @include h5();
+  }
+
+  h6 {
+    @include h6();
+  }
+
+  > p,
+  > ol,
+  ul {
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+
+
+  ol:not([class]) {
+    counter-reset: li;
+
+    > li {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: 8px;
+        content: counter(li) '.';
+        counter-increment: li;
+        font-weight: 700;
+        color: $color-blu-digitale;
+      }
+    }
+  }
+
+  ul:not([class]) {
+    li {
+      position: relative;
+      padding-left: 20px;
+
+      &:before {
+        @include size(8px);
+
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        display: block;
+        background: $color-blu-digitale;
+        border-radius: 50%;
+      }
+    }
+  }
+}

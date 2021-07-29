@@ -49,30 +49,30 @@
 }
 
 
-// Examles
+// Examples
 
 .page-title {
-  @include heading-h1;
+  @include h1;
 }
 
 .page-title-2 {
-  @include heading-h1;
+  @include h1;
   color: $color-blu-digitale;
 
   @include mq(sm) {
-    @include heading-h2;
+    @include h2;
   }
 }
 
 .page-title-3 {
-  @include heading-h1(400);
+  @include h1(400);
 
   color: $color-error-highlight;
 }
 
 .demo-content-1 {
   h3 {
-    @include heading-h3;
+    @include h3;
   }
 
   p {
