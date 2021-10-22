@@ -15,6 +15,7 @@ import { ConnectComponent } from './modules/connect/connect.component';
 import { CodestyleComponent } from './modules/codestyle/codestyle.component';
 import { HelpersComponent } from './modules/helpers/helpers.component';
 import { ServiceMixinsComponent } from './modules/service-mixins/service-mixins.component';
+import { TaxesAdaptiveTableComponent } from './modules/taxes-adaptive-table/taxes-adaptive-table.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ServiceMixinsComponent } from './modules/service-mixins/service-mixins.
     CodestyleComponent,
     HelpersComponent,
     ServiceMixinsComponent,
+    TaxesAdaptiveTableComponent,
   ],
   imports: [
     BrowserModule,

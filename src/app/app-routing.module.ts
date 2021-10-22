@@ -8,6 +8,7 @@ import {ButtonsComponent} from "./modules/buttons/buttons.component";
 import {ConnectComponent} from "./modules/connect/connect.component";
 import {CodestyleComponent} from "./modules/codestyle/codestyle.component";
 import {ServiceMixinsComponent} from "./modules/service-mixins/service-mixins.component";
+import {TaxesAdaptiveTableComponent} from "./modules/taxes-adaptive-table/taxes-adaptive-table.component";
 
 const routes: Routes = [
 
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'service-mixins',
     component: ServiceMixinsComponent
+  },
+  {
+    path: 'taxes-table',
+    component: TaxesAdaptiveTableComponent
   },
   {
     path: '**',
